@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Equip", sans-serif;
+  color: #fff
+  background: #333
+  width: 100%;
+}
