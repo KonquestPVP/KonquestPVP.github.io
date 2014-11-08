@@ -4,9 +4,14 @@ html, body {
 }
 
 h1 {
-  font-family: "Equip", sans-serif;
+  font-family: "sinkinSans";
   text-align: center;
-  color: #fff;
+  color: #cc8550;
   background: #333;
   width: 100%;
+}
+@font-face {
+    font-family: sinkinSans;
+    src: url(./font/SinkinSans-300Light.otf);
+    font-weight: light;
 }
