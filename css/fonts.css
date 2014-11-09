@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Equip';
-    src: url('Equip.ttf');
+    src: url('./fonts/Equip.ttf');
 }
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('Ubuntu.ttf');
+    src: url('./fonts/Ubuntu.ttf');
 }
 
 @font-face {
     font-family: sinkinSans;
-    src: url(./font/SinkinSans-300Light.otf);
+    src: url(./fonts/SinkinSans-300Light.otf);
     font-weight: light;
 }
