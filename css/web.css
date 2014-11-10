@@ -1,0 +1,36 @@
+h1 {
+    font-family: Equip;
+    font-size: 250%;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    width: 100%;
+    box-shadow: 0 0 6px white;
+}
+
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu {
+    position: absolute;
+    right: 0%;
+    padding: 7px;
+}
+
+#menu:hover{
+    background: #666;
+}
+
+.container {
+    width: 90%;
+    margin: 3%;
+    padding: 2%;
+    background: #333;
+}
+
+p {
+    font-family: Ubuntu;
+    color: #fff;
+}
