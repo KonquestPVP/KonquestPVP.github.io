@@ -1,7 +1,7 @@
 var open = false;
 
 $(document).ready(function() {
-   $("#menuicon").click (function() {
+   $("#bar").click (function() {
       if (!open) {
          $("#menu").css("display", "block");
          $("#screen").animate({left: "-=15%"}, 1000);
