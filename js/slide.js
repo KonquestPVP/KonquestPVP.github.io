@@ -4,10 +4,10 @@ $(document).ready(function() {
    $("#menuicon").click (function() {
       if (!open) {
          $("#menu").css("display", "block");
-         $("nav ul, .content, #menu").animate({left: "-=15%"}, 1000);
+         $("h1, #menu, #content").animate({left: "-=15%"}, 1000);
          open = true;
       } else if (open) {
-         $("nav ul, .content, #menu").animate({left: "+=15%"}, 1000, function() {$("#menu").css("display", "none");});
+         $("h1, #menu, #content").animate({left: "+=15%"}, 1000, function() {$("#menu").css("display", "none");});
          
          open = false;
       }
