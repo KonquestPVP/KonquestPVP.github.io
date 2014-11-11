@@ -3,11 +3,15 @@ var open = false;
 $(document).ready(function() {
    $("#bar").click (function() {
       if (!open) {
+         $("html").css("overflow-x", "hidden");
          $("#menu").css("display", "block");
          $("#screen").animate({left: "-=15%"}, 1000);
          open = true;
       } else if (open) {
-         $("#screen").animate({left: "+=15%"}, 1000, function() {$("#menu").css("display", "none");});
+         $("#screen").animate({left: "+=15%"}, 1000, function() {
+            $("html").css("overflow-x", "hidden");
+            $("#menu").css("display", "none");
+         });
          
          open = false;
       }
