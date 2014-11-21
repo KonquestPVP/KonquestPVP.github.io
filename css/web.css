@@ -71,7 +71,8 @@ p {
 }
 
 .footer {
-    background: #333;
+    color: #999;
+    background: #fff;
     text-align: center;
     position: absolute;
     width: 100%;
