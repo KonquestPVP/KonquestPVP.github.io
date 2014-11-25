@@ -13,7 +13,7 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
     text-decoration: none;
 }
 
-.menuicon { 
+.menuicon {
     position: absolute;
     right: 0%;
     padding: 7px;
@@ -37,13 +37,13 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
     left: 100%;
     font-family: Ubuntu;
     font-size: 16px;
-    color: #ffffff;
+    color: #333;
     height: 100%;
     width: 200px;
     background: #333;
     display: none;
-    box-shadow: -0px 0px 6px #888888;
-    z-index: 2;
+    /*box-shadow: -0px 0px 6px #888888;
+    z-index: 2;*/
 }
 
 #menu a {
@@ -54,9 +54,12 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
 #menu li {
     list-style: none;
     padding-left: 5px;
-    line-height: 50px;
-    border-bottom: 1px solid rgba(0,0,0,.6);
-    border-top: 1px solid rgba(255,255,255,.2);
+    line-height: 40px;
+    /*border-bottom: 1px solid rgba(0,0,0,.6);
+    border-top: 1px solid rgba(255,255,255,.2);*/
+}
+#menu li:hover {
+    background: #666;
 }
 
 #screen {
