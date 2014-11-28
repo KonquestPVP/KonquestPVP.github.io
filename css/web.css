@@ -2,10 +2,8 @@ h1 {
     font-family: Equip;
     font-size: 40px;
     text-align: center;
-    color: #fff;
     background: #333;
     width: 100%;
-    box-shadow: 0 0 6px white;
 }
 
 h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
@@ -18,21 +16,35 @@ p {
     color: #fff;
 }
 
-.menuicon { 
+#menuicon { 
     position: absolute;
     right: 0%;
     padding: 7px;
+    z-index: 1;
 }
 
-#menuicon {
+#menuicon:hover {
+    background: #667;
 }
 
-#closeicon {
-    visibility: hidden;
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #333;
+    opacity: 0.9
 }
 
-
-.menuicon:hover{
-    background: #666;
+#menu {
+    height: 100%;
+    width: 100%;
+    
+    color: white;
+    font-family: Equip;
+    font-size: 150%;
+    line-height: 3;
+    text-align: center;
 }
-
