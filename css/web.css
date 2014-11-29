@@ -39,6 +39,12 @@ p {
     opacity: 0.9;*/
 }
 
+#space {
+    height: 100%;
+    width: 100%;
+    margin: 25%;
+    
+}
 #menu {
     height: 100%;
     width: 100%;
