@@ -15,6 +15,25 @@ p {
     font-family: Ubuntu;
     color: #fff;
 }
+.container-main {
+    width: 100%
+}
+.left {
+    margin: 1%;
+    padding: 2%;
+    width: 43.25%;
+    float: left;
+    border-left: 5px solid #0dc4e0;
+    background: #333;
+}
+.right {
+    margin: 1%;
+    padding: 2%;
+    width: 43.25%;
+    float: right;
+    border-left: 5px solid #0dc4e0;
+    background: #333;
+}
 
 #menuicon { 
     position: absolute;
@@ -38,7 +57,6 @@ p {
     /*background: #333;
     opacity: 0.9;*/
 }
-
 
 #menu {
     height: 50%;
