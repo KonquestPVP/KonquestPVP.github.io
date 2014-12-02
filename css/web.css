@@ -18,21 +18,25 @@ p {
 .container-main {
     width: 100%
 }
-.left {
-    margin: 1%;
+.post {
     padding: 2%;
-    width: 43.25%;
-    float: left;
-    border-left: 5px solid #0dc4e0;
+    width: 95%;
+    float: right;
     background: #333;
 }
-.right {
+.left {
+    margin: 2%;
     margin: 1%;
-    padding: 2%;
-    width: 43.25%;
+    width: 48%;
+    float: left;
+    background: #0dc4e0;
+}
+.right {
+    margin: 2%;
+    margin: 1%;
+    width: 48%;
     float: right;
-    border-left: 5px solid #0dc4e0;
-    background: #333;
+    background: #0dc4e0;
 }
 
 #menuicon { 
