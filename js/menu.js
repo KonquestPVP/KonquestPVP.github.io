@@ -1,16 +1,22 @@
 var open = false;
 
+function hoverOn() {
+    $("#menuicon").css("background", "#667");
+}
+
+function hoverOff() {
+    $("#menuicon").css("background", "#333");
+}
+
 $(document).ready(function() {
     var menu = $("#menu");
     var button = $("#menuicon");
     
-    $("#menuicon").mouseover(function() {
-        $("#menuicon").css("background", "#667");
-    });
-    
-    $("#menuicon").mouseout(function() {
-        $("#menuicon").css("background", "#333");
-    });
+    $("#menuicon").on("touchstart", hoverOn);
+    $("#menuicon").on("mouseenter", hoverOn);
+    $("#menuicon").on("mouseleave", hoverOff);
+    $("#menuicon").on("touchmove", hoverOff);
+    $("#menuicon").on("click", hoverOff);
     
     button.click(function() {
         if (!open) {
