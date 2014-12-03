@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
     });
     
-    $("html").mouseup(function(e) {
+    $("html").click(function(e) {
         if (!menu.is(e.target) && menu.has(e.target).length === 0 && !button.is(e.target)) {
             open = false;
             $("#overlay").fadeOut();
