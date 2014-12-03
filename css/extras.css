@@ -1,0 +1,22 @@
+/* Any unused CSS that may be reimplemented will be stored here */
+
+.post {
+    padding: 2%;
+    width: 95%;
+    float: right;
+    background: #333;
+}
+.left {
+    margin: 2%;
+    margin: 1%;
+    width: 48%;
+    float: left;
+    background: #0dc4e0;
+}
+.right {
+    margin: 2%;
+    margin: 1%;
+    width: 48%;
+    float: right;
+    background: #0dc4e0;
+}
