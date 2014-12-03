@@ -26,7 +26,7 @@ $(document).ready(function() {
     $("#menuicon").on("mouseenter", hoverOn);
     $("#menuicon").on("mouseleave", hoverOff);
     $("#menuicon").on("touchmove", hoverOff);
-    $("#menuicon").on("click", hoverOn);
+    $("#menuicon").on("click", hoverOff);
     
     button.click(function() {
         setMenuVisible(!open);
