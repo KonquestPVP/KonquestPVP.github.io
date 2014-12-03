@@ -1,7 +1,10 @@
 var open = false;
 
 $(document).ready(function() {
-    $("#menuicon").click(function() {
+    var menu = $("#menu");
+    var button = $("#menuicon");
+    
+    button.click(function() {
         if (!open) {
             open = true;
             $("#overlay").fadeIn();
@@ -11,10 +14,8 @@ $(document).ready(function() {
         }
     });
     
-    var container = $("#menu");
-    
     $("html").mouseup(function(e) {
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if (!menu.is(e.target) && menu.has(e.target).length === 0 && !button.is(e.target)) {
             open = false;
             $("#overlay").fadeOut();
         }    
