@@ -42,10 +42,6 @@ p {
     z-index: 1;
 }
 
-#menuicon:hover {
-    background: #667;
-}
-
 #overlay {
     display: none;
     position: absolute;

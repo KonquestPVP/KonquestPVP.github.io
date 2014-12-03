@@ -4,6 +4,14 @@ $(document).ready(function() {
     var menu = $("#menu");
     var button = $("#menuicon");
     
+    $("#menuicon").mouseover(function() {
+        $("#menuicon").css("background", "#667");
+    });
+    
+    $("#menuicon").mouseout(function() {
+        $("#menuicon").css("background", "#333");
+    });
+    
     button.click(function() {
         if (!open) {
             open = true;
