@@ -21,11 +21,11 @@ $(document).ready(function() {
         if (!open) {
             open = true;
             $("#overlay").fadeIn();
-            $("#menuicon").on("click", hoverOn);
+            hoverOn;
         } else if (open) {
             open = false;
             $("#overlay").fadeOut();
-            $("#menuicon").on("click", hoverOff);
+            hoverOff;
         }
     });
     
