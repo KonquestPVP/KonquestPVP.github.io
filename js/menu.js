@@ -16,12 +16,7 @@ $(document).ready(function() {
     $("#menuicon").on("mouseenter", hoverOn);
     $("#menuicon").on("mouseleave", hoverOff);
     $("#menuicon").on("touchmove", hoverOff);
-    $("#menuicon").on("click", function() {
-        if($("#menuicon").mouseleave()) {
-            hoverOff;
-        }
-    });
-    
+    $("#menuicon").on("click", hoverOff);
     button.click(function() {
         if (!open) {
             open = true;
