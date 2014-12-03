@@ -8,6 +8,16 @@ function hoverOff() {
     $("#menuicon").css("background", "#333");
 }
 
+function setMenuVisible(visible) {
+	if(visible) {
+		open = true;
+		$("#overlay").fadeIn();
+	} else {
+		open = false;
+		$("#overlay").fadeOut();
+	}
+}
+
 $(document).ready(function() {
     var menu = $("#menu");
     var button = $("#menuicon");
@@ -16,22 +26,15 @@ $(document).ready(function() {
     $("#menuicon").on("mouseenter", hoverOn);
     $("#menuicon").on("mouseleave", hoverOff);
     $("#menuicon").on("touchmove", hoverOff);
-    $("#menuicon").on("click", hoverOff);
+    $("#menuicon").on("click", hoverOn);
     
     button.click(function() {
-        if (!open) {
-            open = true;
-            $("#overlay").fadeIn();
-        } else if (open) {
-            open = false;
-            $("#overlay").fadeOut();
-        }
+        setMenuVisible(!open);
     });
     
     $("#overlay").click(function(e) {
         if (!menu.is(e.target) && menu.has(e.target).length === 0 && !button.is(e.target)) {
-            open = false;
-            $("#overlay").fadeOut();
+            setMenuVisible(false);
         }    
     });
 });
