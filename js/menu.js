@@ -17,7 +17,7 @@ $(document).ready(function() {
     $("#menuicon").on("mouseleave", hoverOff);
     $("#menuicon").on("touchmove", hoverOff);
     $("#menuicon").on("click", function() {
-        if(!$("#menuicon").mouseover()) {
+        if($("#menuicon").mouseleave()) {
             hoverOff;
         }
     });
