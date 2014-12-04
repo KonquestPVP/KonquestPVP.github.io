@@ -18,6 +18,7 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
 p {
     font-family: Ubuntu;
     color: #fff;
+
 }
 
 table {
@@ -95,6 +96,11 @@ td {
     text-align: center;
 }
 
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 481px)  {
     .left {
         margin: 2% 0 0 2%;
@@ -115,4 +121,8 @@ td {
         width: 1024px;
         margin: auto;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
