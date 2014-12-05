@@ -68,9 +68,13 @@ td {
     opacity: 0.9;*/
 }
 
-#overlay li
-{
-    border-bottom: solid 1px rgba(34,34,34,0.5);
+#overlay ul {
+	border-left: solid 2px #222222;
+	border-right: solid 2px #222222;
+}
+
+#overlay li {
+    border-bottom: solid 2px #222222;
 }
 
 #menu {
