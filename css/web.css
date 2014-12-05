@@ -63,25 +63,28 @@ td {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(51,51,51,0.9);
+    background: rgba(51,51,51,0.92);
     /*background: #333;
     opacity: 0.9;*/
 }
 
-#overlay ul {
-	border-left: solid 2px #222222;
-	border-right: solid 2px #222222;
+#overlay li {
+    border-left: solid 0px #0dc4e0;
+    text-align: left;
+    padding-left: 5%;
 }
 
-#overlay li {
-    border-bottom: solid 2px #222222;
+#overlay ul {
+	border-left: solid 2px #fff;
+	border-top: solid 2px #fff;	
 }
 
 #menu {
     height: 50%;
-    width: 80%;
+    width: 30%;
     position: absolute;
-    left: 10%;
+    left: 35%;
+    top: 25%;
     color: white;
     font-family: Equip;
     font-size: 150%;
