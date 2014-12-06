@@ -77,7 +77,6 @@ td {
 #overlay ul {
 	border-left: solid 2px #fff;
 	border-top: solid 2px #fff;	
-    display: none;
 }
 
 #menu {
@@ -99,6 +98,10 @@ td {
 }
 
 /* TEST CSS START */
+
+#dropdown {
+    display: none;
+}
 
 .outer {
     display: table;
