@@ -77,6 +77,7 @@ td {
 #overlay ul {
 	border-left: solid 2px #fff;
 	border-top: solid 2px #fff;	
+    display: none;
 }
 
 #menu {
@@ -90,7 +91,6 @@ td {
     font-size: 150%;
     line-height: 3;
     text-align: center;
-    display: none;
 }
 
 #menu a {

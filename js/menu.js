@@ -13,12 +13,12 @@ function setMenuVisible(visible) {
         open = true;
         $("#overlay").fadeIn({
             done : function(animation, jumpToEnd) {
-                $("#menu").slideDown();
+                $("#overlay ul").slideDown();
             }
         });
     } else {
         open = false;
-        $("#menu").slideUp({
+        $("#overlay ul").slideUp({
             done : function(animation, jumpToEnd) {
                 $("#overlay").fadeOut();
             }
