@@ -34,33 +34,31 @@ function hoverOffMenuItem() {
     $(this).animate({"border-left-width": "0px"}, 200);
 }
 
-$(document).ready(
-        function() {
-            var menu = $("#menu");
-            var button = $("#menuicon");
+$(document).ready(function() {
+    var menu = $("#menu");
+    var button = $("#menuicon");
 
-            $("#menuicon").on("touchstart", hoverOn);
-            $("#menuicon").on("mouseenter", hoverOn);
-            $("#menuicon").on("mouseleave", hoverOff);
-            $("#menuicon").on("touchmove", hoverOff);
-            $("#menuicon").on("click", hoverOff);
+    $("#menuicon").on("touchstart", hoverOn);
+    $("#menuicon").on("mouseenter", hoverOn);
+    $("#menuicon").on("mouseleave", hoverOff);
+    $("#menuicon").on("touchmove", hoverOff);
+    $("#menuicon").on("click", hoverOff);
 
-            button.click(function() {
-                setMenuVisible(!open);
-            });
+    button.click(function() {
+        setMenuVisible(!open);
+    });
             
-            var menuItem = $("#overlay li");
-            menuItem.on("touchstart", hoverOnMenuItem);
-            menuItem.on("mouseenter", hoverOnMenuItem);
-            menuItem.on("mouseleave", hoverOffMenuItem);
-            menuItem.on("touchmove", hoverOffMenuItem);
+    var menuItem = $("#overlay li");
+    menuItem.on("touchstart", hoverOnMenuItem);
+    menuItem.on("mouseenter", hoverOnMenuItem);
+    menuItem.on("mouseleave", hoverOffMenuItem);
+    menuItem.on("touchmove", hoverOffMenuItem);
 
-            $("#overlay").click(
-                    function(e) {
-                        if (!menu.is(e.target)
-                                && menu.has(e.target).length === 0
-                                && !button.is(e.target)) {
-                            setMenuVisible(false);
-                        }
-                    });
-        });
+    $("#overlay").click(function(e) {
+        if (!menu.is(e.target)
+                && menu.has(e.target).length === 0
+                && !button.is(e.target)) {
+            setMenuVisible(false);
+        }
+    });
+});
