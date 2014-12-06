@@ -90,6 +90,7 @@ td {
     font-size: 150%;
     line-height: 3;
     text-align: center;
+    display: none;
 }
 
 #menu a {
