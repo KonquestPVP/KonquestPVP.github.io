@@ -98,6 +98,28 @@ td {
     text-decoration: none;
 }
 
+/* TEST CSS START */
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+}
+
+/* TEST CSS END */
+
 @media screen and (min-width: 481px)  {
     .left {
         margin: 2% 0 0 2%;
