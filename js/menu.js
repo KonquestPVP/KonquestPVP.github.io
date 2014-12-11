@@ -13,7 +13,7 @@ function setMenuVisible(visible) {
         open = true;
         $("#overlay").fadeIn({
             done : function(animation, jumpToEnd) {
-                $("#container-main").css("-webkit-filter", "blur(1px)");
+                $("#content").css("-webkit-filter", "blur(1px)");
                 $("#dropdown").slideDown(); // change #dropdown to #menu if test css fails
             }
         });
@@ -21,7 +21,7 @@ function setMenuVisible(visible) {
         open = false;
         $("#dropdown").slideUp({ // change #dropdown to #menu if test css fails
             done : function(animation, jumpToEnd) {
-                $("#container-main").css("-webkit-filter", "blur(0px)");
+                $("#content").css("-webkit-filter", "blur(0px)");
                 $("#overlay").fadeOut();
             }
         });
