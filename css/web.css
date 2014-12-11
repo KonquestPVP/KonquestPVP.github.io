@@ -22,19 +22,15 @@ p {
 
 }
 
-table {
-	width: 100%;
+#container-main {
+    width: 100%;
 }
 
-td {
-	border-bottom: solid 5px #0dc4e0;
+#container-sidebar {
+    width: 100%;
 }
 
-.container-main {
-    width: 100%
-}
-
-.left {
+.post {
     margin: 3%;
     padding: 2%;
     width: 90%;
@@ -67,8 +63,7 @@ td {
     height: 100%;
     width: 100%;
     background: rgba(51,51,51,0.92);
-    /*background: #333;
-    opacity: 0.9;*/
+    z-index: 1;
 }
 
 #overlay li {
@@ -127,17 +122,26 @@ td {
 /* TEST CSS END */
 
 @media screen and (min-width: 481px)  {
-    .left {
-        margin: 2% 0 0 2%;
-        width: 57%;
+    #container-main {
         float: left;
-        background: #333;
+        width: 60%;
+        margin: 3% 0 0 3%;
     }
-    .right {
-        margin: 2% 2% 0 0;
-        width: 27%;
+    
+    #container-sidebar {
         float: right;
-        background: #333;
+        width: 25%;
+        margin: 3% 5% 0 0;
+    }
+    
+    .post {
+        width: 100%;
+        margin: 0 0 6% 0;
+    }
+    
+    .right {
+        width: 100%;
+        margin: 0 0 12% 0;
     }
 }
 
