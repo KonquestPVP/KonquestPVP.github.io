@@ -50,7 +50,7 @@ $(document).ready(function() {
         setMenuVisible(!open);
     });
             
-    var menuItem = $("#overlay li");
+    var menuItem = $("#menu li");
     menuItem.on("touchstart", hoverOnMenuItem);
     menuItem.on("mouseenter", hoverOnMenuItem);
     menuItem.on("mouseleave", hoverOffMenuItem);
