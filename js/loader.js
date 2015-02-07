@@ -30,8 +30,6 @@ function go() {
             i++;
             go();
         } else {
-            alert("The array stored the following values " + files);
-            alert("files.length contains " + files.length + " items");
             load();
         }
     });
