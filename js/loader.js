@@ -9,6 +9,7 @@ function load() {
                 "<h2>" + data.title + "</h2>",
                 "<p>" + data.date + "</p>",
                 "<p>" + data.author + "</p>",
+                "<img src=\"img/" + data.author + ".png\" height=\"40\"  width=\"40\" />",
                 "<p>" + data.content + "</p>"
             ];
             $("#content #info").append(info);
