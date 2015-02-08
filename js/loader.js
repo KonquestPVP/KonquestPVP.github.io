@@ -17,13 +17,7 @@ function load() {
 
 function organizeAndPost() {
     alert("Done loading json");
-    loadedPosts.sort(function(a, b) {
-        var da = new Date(a.date);
-        var db = new Data(b.date);
-        if (da > db) return 1;
-        if (da < db) return -1;
-        else         return 0;
-    });
+    loadedPosts.sort(sortDates);
     alert("Done sorting json");
     
     for (var k = 0; k < loadedPosts.length; k++) {
@@ -36,6 +30,14 @@ function organizeAndPost() {
         ];
         $("#content #info").append(info);
     }
+}
+
+function sortDates(a, b) {
+    var da = new Date(a.date);
+    var db = new Data(b.date);
+    if (da > db) return 1;
+    if (da < db) return -1;
+    else         return 0;
 }
 
 function go() {
