@@ -20,8 +20,8 @@ function organizeAndPost() {
     loadedPosts.sort(function(a, b) {
         var da = new Date(a.date);
         var db = new Date(b.date);
-        if (da > db) return -1;
-        if (da < db) return 1;
+        if (da > db) return 1;
+        if (da < db) return -1;
         else         return 0;
     });
     alert("Done sorting json");
