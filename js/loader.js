@@ -18,8 +18,8 @@ function load() {
 function organizeAndPost() {
     alert("Done loading json");
     loadedPosts.sort(function(a, b) {
-        var da = new Date(a.date.replace("st,", "").replace("nd,", "").replace("rd,", "").replace("th,", ""));
-        var db = new Date(b.date.replace("st,", "").replace("nd,", "").replace("rd,", "").replace("th,", ""));
+        var da = new Date(a.date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ","));
+        var db = new Date(b.date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ","));
         if (da > db) return 1;
         if (da < db) return -1;
         else         return 0;
@@ -28,7 +28,7 @@ function organizeAndPost() {
     
     for (var k = 0; k < loadedPosts.length; k++) {
         var data = loadedPosts[k];
-        alert(new Date(data.date));
+        alert(new Date(data.date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ",")));
         var info = [
             "<h2>" + data.title + "</h2>",
             "<p>" + data.date + "</p>",
