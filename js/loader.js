@@ -18,8 +18,8 @@ function load() {
 function organizeAndPost() {
     alert("Done loading json");
     loadedPosts.sort(function(a, b) {
-        var da = new Date(a.date);
-        var db = new Date(b.date);
+        var da = new Date(a.date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ","));
+        var db = new Date(b.date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ","));
         if (da > db) return 1;
         if (da < db) return -1;
         else         return 0;
