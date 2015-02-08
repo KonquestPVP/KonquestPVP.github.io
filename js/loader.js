@@ -27,6 +27,7 @@ function organizeAndPost() {
     alert("Done sorting json");
     
     for (var k = 0; k < loadedPosts.length; k++) {
+        var data = loadedPosts[k];
         var info = [
             "<h2>" + data.title + "</h2>",
             "<p>" + data.date + "</p>",
