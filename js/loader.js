@@ -4,11 +4,9 @@ var i = 0;
 var loadedPosts = [];
 
 function load() {
-    alert("loading json files");
     jsonLoaded = 0;
     for(var j = 0; j < files.length; j++) {
         jQuery.getJSON("json/" + files[j] + ".json", function(data) {
-            alert("loading json: " + data);
             loadedPosts.push(data);
             if (loadedPosts.length == files.length) {
                 organizeAndPost();
@@ -26,6 +24,7 @@ function organizeAndPost() {
         if (da < db) return -1;
         else         return 0;
     });
+    alert("Done sorting json");
     
     for (var k = 0; k < loadedPosts.length; k++) {
         var info = [
