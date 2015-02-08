@@ -28,6 +28,7 @@ function organizeAndPost() {
     
     for (var k = 0; k < loadedPosts.length; k++) {
         var data = loadedPosts[k];
+        alert(new Date(data.date));
         var info = [
             "<h2>" + data.title + "</h2>",
             "<p>" + data.date + "</p>",
