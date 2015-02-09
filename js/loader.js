@@ -16,19 +16,16 @@ function load() {
 }
 
 function organizeAndPost() {
-    alert("Done loading json");
     loadedPosts.sort(function(a, b) {
-        var da = new Date(a.date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ","));
-        var db = new Date(b.date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ","));
+        var da = new Date(removeExtraFromNumbers(a.date));
+        var db = new Date(removeExtraFromNumbers(b.date));
         if (da > db) return -1;
         if (da < db) return 1;
         else         return 0;
     });
-    alert("Done sorting json");
     
     for (var k = 0; k < loadedPosts.length; k++) {
         var data = loadedPosts[k];
-        alert(new Date(data.date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ",")));
         var info = [
             "<h2>" + data.title + "</h2>",
             "<p>" + data.date + "</p>",
@@ -38,6 +35,10 @@ function organizeAndPost() {
         ];
         $("#content #info").append(info);
     }
+}
+
+function removeExtraFromNumbers(date) {
+    return date.replace("st,", ",").replace("nd,", ",").replace("rd,", ",").replace("th,", ",");
 }
 
 function go() {
